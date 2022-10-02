@@ -6,6 +6,122 @@
     <!------<title> Website Layout | CodingLab</title>------>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+      .container{
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1517436073-8b3b0b5f3c1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .navbar{
+        width: 100%;
+        height: 80px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      }
+      .container .navbar .logo{
+        width: 150px;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+      }
+      .container .navbar .nav{
+        width: 600px;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container .navbar .nav .link{
+        width: 100px;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+      .container .navbar .nav .link:hover{
+        color: #f00;
+      }
+      .container .navbar .nav .link.active{
+        color: #f00;
+      }
+      .container .navbar .nav .icon{
+        display: none;
+      }
+      @media (max-width: 1000px){
+        .container .navbar .nav{
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          width: 100%;
+          height: calc(100vh - 80px);
+          background: #333;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding: 50px 100px;
+          transition: all 0.5s ease;
+        }
+        .container .navbar .nav .link{
+          width: 100%;
+          height: 50px;
+          background: #333;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-size: 18px;
+          font-weight: 500;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          text-decoration: none;
+          margin-bottom: 20px;
+        }
+        .container .navbar .nav .link:hover{
+          color: #f00;
+        }
+        .container .navbar .nav .link.active{
+          color: #f00;
+        }
+        .container .navbar .nav .icon{
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: 30px;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer;
+        }
+        .container .navbar .nav.active{
+          left: 0;
+        }
+      }
+    </style>
    </head>
 <body>
   <section>
@@ -14,14 +130,15 @@
         <nav>
 
           <div class="menu">
-
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT US </a></li>
-              <li><a href="#">EVENTS</a></li>
-              <li><a href="#">CONTACT US </a></li>
-
-            </ul>
+            <div class = "navbar">
+              <a href="#" class="logo">Attendence</a>
+              <div class="nav">
+                <a href="#" class="link active">Home</a>
+                <a href="#" class="link">About</a>
+                <a href="#" class="link">Services</a>
+                <a href="#" class="link">Contact</a>
+                <a href="#" class="icon"><i class="fas fa-bars"></i></a>
+              </div>
           </div>
         </nav>
 
