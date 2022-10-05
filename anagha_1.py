@@ -1,5 +1,5 @@
 def main():
-    fruits=["strawberry",'apple',"blueberry","raspberry","mango","blackberry","orange","kiwi","watermelon","dragon fruit"]
+    fruits=["mangoes",'apples',"blueberries","raspberries","sunmelons","blackberries","oranges","kiwis","watermelones","dragon fruits"]
     print("Index of mango = ",fruits.index("mango"))
 
     print("length of the array fruits =",len(fruits))
