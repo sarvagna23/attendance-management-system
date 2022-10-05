@@ -5,7 +5,9 @@ for i in range(T):
     K = int(A[1])
     X = int(A[2])
     Y = int(A[3])
+    Q = ((N-K)*Y)
+    W = (K*X)
     if X<Y:
-        print(N*X)
+        print(X*N)
     else:
-        print((K*X)+((N-K)*Y))
+        print(Q + W)
