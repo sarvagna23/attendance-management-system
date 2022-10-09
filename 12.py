@@ -4,12 +4,7 @@ class AddSubjects(tk.Frame):
 		label1=tk.Label(self,text="Add subject's name seperated by commas(,)",font=("Times",16))
 		txt1=tk.Text(self,font=("Times",16),width=48,height=3)
 		
-		bt2=tk.Button(self,text="Add subjects!",bg="orange",font=("Times",16),height=2,width=17,command=lambda:self.addsub(txt1.get("1.0",tk.END),controller))
-		bt1=tk.Button(self,text="Back to home",bg="red",font=("Times",16),height=2,width=17,command=lambda:controller.show_frame(StartPage))
-		label1.pack()
-		txt1.pack()
-		bt2.pack()	
-		bt1.pack()
+	
 	def addsub(self,a,controller):
 		
 		conn=sql.connect('attend')
