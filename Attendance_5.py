@@ -63,4 +63,4 @@ class EditRecord(tk.Frame):
 			conn.commit()
 			conn.close()
 		except:
-			messagebox.showinfo("Alert!", "There is no record")
+			messagebox.showinfo("Alert!", "there is a record ")
