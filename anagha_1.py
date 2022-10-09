@@ -7,8 +7,6 @@ def main():
     fruits.pop(0)
     print("after removing index 0 =",fruits)
 
-    fruits.insert(0,"orange")
-    print("after inserting orange =",fruits)
 
     fruits.reverse()
     print("After reversing the array =",fruits)
