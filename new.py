@@ -10,10 +10,6 @@ class Slinkedlist:
         while printval is not None:
             print(printval.dataval)
             printval = printval.nextval
-    def push(self, new_data):
-        new_node = Node(new_data)
-        new_node.nextval = self.headval
-        self.headval = new_node
     def append(self, new_data):
         new_node = Node(new_data)
         if self.headval is None:
