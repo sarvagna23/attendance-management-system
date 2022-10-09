@@ -72,55 +72,6 @@
       .container .navbar .nav .icon{
         display: none;
       }
-      @media (max-width: 1000px){
-        .container .navbar .nav{
-          position: fixed;
-          top: 80px;
-          left: -100%;
-          width: 100%;
-          height: calc(100vh - 80px);
-          background: #333;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          padding: 50px 100px;
-          transition: all 0.5s ease;
-        }
-        .container .navbar .nav .link{
-          width: 100%;
-          height: 50px;
-          background: #333;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          font-size: 18px;
-          font-weight: 500;
-          color: #fff;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          text-decoration: none;
-          margin-bottom: 20px;
-        }
-        .container .navbar .nav .link:hover{
-          color: #f00;
-        }
-        .container .navbar .nav .link.active{
-          color: #f00;
-        }
-        .container .navbar .nav .icon{
-          display: block;
-          position: absolute;
-          top: 30px;
-          right: 30px;
-          font-size: 30px;
-          color: #fff;
-          cursor: pointer;
-        }
-        .container .navbar .nav.active{
-          left: 0;
-        }
-      }
     </style>
    </head>
 <body>
