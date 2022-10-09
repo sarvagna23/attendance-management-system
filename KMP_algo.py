@@ -10,16 +10,7 @@ def KMP(text, pattern):
     i = 0 # initial index for iterating text
     j = 0 # initial index for iterating pattern
     while i < N:
-        # If the values at the given indexes matches
-        # we increment the values of i & j
-        if text[i] == pattern[j]: 
-            i += 1
-            j += 1
-         # else we change the value of j 
-         # to the value at (j-1)th index of LPS Array
-         # because we've found a matching string till (j-1)th position
-         # only if the value of j is not 0
-         # else if we increment i to check the next value
+      
         else:
             if j != 0:
                 j = lps_arr[j-1]
