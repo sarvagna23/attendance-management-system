@@ -13,11 +13,7 @@ if (ratio[j] > ratio[max_idx])
 max_idx = j;
 // Swap the found minimum element with the first
 // element
-double temp = ratio[max_idx];
-ratio[max_idx] = ratio[i];
-ratio[i] = temp;
-//Swap the indices for values and weight arrays as well
-//according to the above sorting
+
 int temp1=value[max_idx];
 value[max_idx] = value[i];
 value[i] = temp1;
