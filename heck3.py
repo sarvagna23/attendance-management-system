@@ -16,8 +16,6 @@ class EditRecord(tk.Frame):
 		txt2.pack()
 		lb4.pack()
 		txt3.pack()
-		bt3=tk.Button(self,text="Update",bg="green",font=("Times",16),height=2,width=17,command=lambda:self.update(txt1.get(),txt2.get(),txt3.get()))
-		bt2=tk.Button(self,text="Show subjects ID",bg="yellow",font=("Times",16),height=2,width=17,command=lambda:self.showid(controller))
 		bt2.pack()
 		bt3.pack()
 		bt1.pack()
