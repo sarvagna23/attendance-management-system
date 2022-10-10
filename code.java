@@ -46,14 +46,13 @@ public class Main
         //Iterator val= list.iterator();
         while(!list.isEmpty())//(Node element: list)
         {
-            //Node neighbour=element;
+         
             Node neighbour=list.poll();
             main_visited[n.posi][n.posj]=1;
 
             neighbour.parent_i=n.posi;
             neighbour.parent_j=n.posj;
-            //System.out.println(neighbour.posi+" "+neighbour.posj);
-            Node temp=search(neighbour,g+1,fbound);
+                        Node temp=search(neighbour,g+1,fbound);
             if(temp.posi==dest.posi && temp.posj==dest.posj)
             {
                 return temp;
@@ -88,11 +87,7 @@ public class Main
         }
        
         
-        if(possible(i,j-1)==true)
-        {
-            list.add(nodeDetails[i][j-1]);
-            visited[i][j-1]++;
-        }
+        
        
         
         if(possible(i+1,j-1)==true)
