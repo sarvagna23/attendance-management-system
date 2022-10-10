@@ -8,3 +8,6 @@ HANUMAN
 AMUN
 PRABAHAT
 GITA
+gb
+gv
+gk
