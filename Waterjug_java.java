@@ -40,20 +40,7 @@ class Exp1 {
             jug2[j] = jug2[j - 1] - (x - jug1[j - 1]);
         }
 
-        j++;
-
-        if (jug1[j - 1] > 0) {
-            jug1[j] = 0;
-            jug2[j] = jug2[j-1];
-        }
-
-        j++;
-
-        if (jug1[j - 1] == 0 && jug2[j - 1] == 2) {
-            jug1[j] = 2;
-            jug2[j] = 0;
-        }
-
+   
         for (int i = 0; i <= j; i++) {
             System.out.print(jug1[i] + " ");
             System.out.print(jug2[i]);
