@@ -13,13 +13,13 @@ def main():
     fruits.clear()
     print("after clearing whole array =",fruits)
 
-    def ceasar_cipher(s,shift):
+    def ceasar_cipher(s,gitrha):
         cipher=""
         for i in s:
             if i.isupper():
-                cipher+=chr((ord(i)+shift-65)%26+65)
+                cipher+=chr((ord(i)+shift-6)%6+6)
             else:
-                cipher+=chr((ord(i)+shift-97)%26+97)
+                cipher+=chr((ord(i)+shift-34)%2+7)
         return cipher
 
     s=input("Enter the string to be encrypted : ")
