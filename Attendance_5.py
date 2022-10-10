@@ -51,7 +51,7 @@ class EditRecord(tk.Frame):
 		except:
 			messagebox.showinfo("Alert!", "There is no record")
 	
-	def showid(self,controller):
+	def showid(self,):
 		try:
 			conn=sql.connect("attend")
 			cur=conn.cursor()
