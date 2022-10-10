@@ -2,17 +2,14 @@ public class Main {
 static int capacity=25;
 static void sort(int[] value,int[] weights,double[] ratio){
 int n = ratio.length;
-// One by one move boundary of unsorted subarray
+
 for (int i = 0; i < n-1; i++)
 {
-// Find the minimum element in unsorted array
 int max_idx = i;
 
 for (int j = i+1; j < n; j++)
 if (ratio[j] > ratio[max_idx])
 max_idx = j;
-// Swap the found minimum element with the first
-// element
 
 int temp1=value[max_idx];
 value[max_idx] = value[i];
@@ -40,7 +37,7 @@ System.out.println(value[index]+"\t\t\t"+weights[index]+
 "\t\t\t\t"+capacity);
 index++;
 }
-//adding fractional val into the knapsack
+
 if(capacity>0){
 System.out.println("Current Value = Current sum + Value for fractional capacity");
 System.out.println("Current Value = "+total_value+" + "+
