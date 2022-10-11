@@ -5,11 +5,11 @@ import java.util.Map;
 
 class Graph {
 
-    // Edge class corresponds to every single edge in the graph
+    
     class Edge {
         int s, d, w;
 
-        // Default constructor initializing source, dest and weight = 0
+       
         Edge() {
             s = d = w = 0;
         }
@@ -48,7 +48,7 @@ class Graph {
             map.put(g.arr[i].d, Integer.MAX_VALUE);
         }
 
-        //source distance taken to be 0
+      
         map.put(s, 0);
 
         // Relaxing edges |V| - 1 times
@@ -63,13 +63,11 @@ class Graph {
             }
         }
 
-        // TreeMap stores data in sorted order with respect to keys
-        // Printing ditances of all vertices
+        
         TreeMap < Integer,Integer > sort = new TreeMap < > (map);
 
         for (Map.Entry < Integer,Integer > entry: sort.entrySet()) {
-            // Key --> Vertex
-            // Value --> Distance
+           
             if (entry.getKey() == s)
                 continue;
 
@@ -102,13 +100,13 @@ class Graph {
 
             Graph graph = new Graph(V, E);
 
-            // Assuming source of first edge is considered as Source Vertex
+          
             int src = sc.nextInt();
             graph.arr[0].s = src;
             graph.arr[0].d = sc.nextInt();
             graph.arr[0].w = sc.nextInt();
 
-            // Taking input values for remaining vertices, edges and the weights
+          
             for (int x = 1; x < E; x++) {
                 graph.arr[x].s = sc.nextInt();
                 graph.arr[x].d = sc.nextInt();
