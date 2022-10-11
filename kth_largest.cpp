@@ -3,12 +3,7 @@ using namespace std;
 #define ll long long 
 
 void nobody(){
-    int n;
-    cin >> n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin >> arr[i];
-    }
+
     int k;
     cin >> k;
     priority_queue<int,vector<int>,greater<int>> p;
