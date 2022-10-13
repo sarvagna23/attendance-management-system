@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <style>
+    h1{text-align: center;
+        text-decoration: black;
+        color: rgb(10, 3, 3);}
+    .container{background-image: url("https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.jpeg");
+        padding: 5px 30px 20px 20px;
+        border-radius: 10px;}  
+    input[type="submit"] {
+        background-color: rgba(6, 205, 231, 0.911);
+        text-decoration: solid;
+        color:black ;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;}
+    input[type="submit"]:hover {
+        background-color: rgb(141, 111, 141);}
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="text"],
+    select,
+    textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 10pxpx;}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1><b>Feedback Form</b></h1>
+        <hr color="black">
+        <h3>Your Name:- <input type="text" name="name"></h3>
+        <h3>Your Email:-<input type="email" name="email" id="email" ></h3>
+        <h3>Contact No:-<input type="number" name="phone" id="phone"></h3>
+        <h3>Product:-   <input type="text" name="product"></h3>
+        <h3>Comment:- <textarea name="Comment" id="Comment" cols="100" rows="8"></textarea></h3>
+        <h3>Advantages:- <textarea name="advantages" id="advantages" cols="100" rows="8"></textarea></h3>
+        <h3>Disadvantages:- <textarea name="disadvantages" id="disadvantages" cols="100" rows="8"></textarea></h3>
+        <h3><input type="checkbox" name="i" id="i" >I am not a Robot</h3>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    </div>
+</body>
+</html>
