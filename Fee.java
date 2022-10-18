@@ -99,14 +99,7 @@ public class Fee extends JFrame
     z5.setBounds(745,280,200,20);
     z5.setForeground(Color.blue);
     
-    c1.setBounds(795,300,100,30);
-    c1.setForeground(Color.red);
-    c2.setBounds(795,340,100,30);
-    c2.setForeground(Color.red);
-    c3.setBounds(795,380,100,30);
-    c3.setForeground(Color.red);
-    c4.setBounds(795,420,100,30);
-    c4.setForeground(Color.red);
+
 
     add(l1);
     add(l3);add(l4);
