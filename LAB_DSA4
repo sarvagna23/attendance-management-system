@@ -1,0 +1,11 @@
+import numpy as np
+
+my_arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(my_arr)
+print(my_arr.shape)
+my_arr = my_arr.reshape(3, 3)
+print(my_arr)
+print(my_arr.shape)
+my_arr = my_arr.tolist()
+print(my_arr)
+print(type(my_arr))
